@@ -1,6 +1,6 @@
 import React from 'react'
 import Loading from '../components/Loading'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import {FaFastForward, FaFastBackward} from 'react-icons/fa'
 
 export default function SinglePokemon() {
@@ -82,7 +82,7 @@ export default function SinglePokemon() {
 
     const beforeClickHandler = ()=>{
         let newImageID = imgID;
-        if(newImageID == 0)
+        if(newImageID === 0)
         {
             newImageID = Object.entries(imageUrls).length -1;
         }
@@ -96,7 +96,7 @@ export default function SinglePokemon() {
 
     const nextClickHandler = ()=>{
         let newImageID = imgID;
-        if(newImageID == Object.entries(imageUrls).length -1)
+        if(newImageID === Object.entries(imageUrls).length -1)
         {
             newImageID = 0;
         }

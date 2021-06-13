@@ -23,6 +23,9 @@ function App() {
         <Route  path = "/mypokemonlist">
           <MyPokemonList/>
         </Route>
+        <Route path="*">
+          <Error />
+        </Route>
       </Switch> 
     </div>
     </Router>

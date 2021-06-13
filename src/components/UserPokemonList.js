@@ -1,10 +1,9 @@
 import React from 'react'
 import Pokemon from './Pokemon'
-import Loading from './Loading'
 import { useGlobalContext } from '../Context'
 
 const UserPokemonList = () =>{
-  const { myPokemonList, setMyPokemonList } = useGlobalContext() 
+  const { myPokemonList} = useGlobalContext() 
   return (
     <section className='section'>
     
