@@ -64,7 +64,7 @@ const Pokemon = ({name, url,isUserPokemonList})=>{
             <img src={pokemonImage} alt={name} />
          </div>
          <div className = 'pokemon-footer'>
-              <h3>{name}</h3>
+              <h3 className= "section-title">{name}</h3>
               <Link to={`/pokemon/${pokemonID}`} className='btn btn-primary btn-details'>
                  details
              </Link>

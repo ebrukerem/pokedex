@@ -18,21 +18,23 @@ export default function Navbar() {
     }
   }, [showLinks]);
   return (
-    <nav className='navbar'>
+    <nav>
       <div className='nav-center'>
+      <div className='nav-header'>
         <Link to='/'>
           <img src={logo} alt='pokemon db logo' className='logo' />
         </Link>
         <button className='nav-toggle' onClick={toggleLinks}>
             <FaBars />
         </button>
-        <div className='nav-links-container' ref={linksContainerRef}>
-        <ul className='nav-links' ref={linksRef}>
+        </div>
+        <div className='links-container' ref={linksContainerRef}>
+        <ul className='links' ref={linksRef}>
           <li>
-            <Link to='/'>Home</Link>
+            <a href='/'>Home</a>
           </li>
           <li>
-            <Link to='/MyPokemonList'>My Pokemon List</Link>
+            <a href='/MyPokemonList'>My Pokemon List</a>
           </li>
         </ul>
         </div>

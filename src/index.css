@@ -156,7 +156,7 @@ Navbar
 .logo {
   height: 40px;
 }
-.nav-links a {
+.links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
   text-transform: capitalize;
@@ -165,13 +165,13 @@ Navbar
   padding: 0.5rem 1rem;
   transition: var(--transition);
 }
-.nav-links a:hover {
+.links a:hover {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
 }
 
-.nav-links-container {
+.links-container {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -194,17 +194,17 @@ Navbar
   .nav-toggle {
     display: none;
   }
-  .nav-links-container {
+  .links-container {
     height: auto !important;
   }
-  .nav-links {
+  .links {
     display: flex;
   }
-  .nav-links a {
+  .links a {
     padding: 0;
     margin: 0 0.5rem;
   }
-  .nav-links a:hover {
+  .links a:hover {
     padding: 0;
     background: transparent;
   }
@@ -261,7 +261,7 @@ Pokemon List
 }
 
 .section-title {
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   text-align: center;
@@ -321,6 +321,12 @@ Pokemon
 .pokemon-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .section-title {
+    font-size: 5rem;
+  }
 }
 /* 
 ====== 
