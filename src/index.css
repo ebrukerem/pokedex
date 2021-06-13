@@ -154,7 +154,8 @@ Navbar
   transform: rotate(90deg);
 }
 .logo {
-  height: 40px;
+  height: 25px;
+  
 }
 .links a {
   color: var(--clr-grey-3);
@@ -187,6 +188,9 @@ Navbar
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+  }
+  .logo {
+    height: 40px; 
   }
   .nav-header {
     padding: 0;
