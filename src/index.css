@@ -146,6 +146,8 @@ Navbar
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  position: absolute;
+  right: 1rem;
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
