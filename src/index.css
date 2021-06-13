@@ -129,18 +129,8 @@ Navbar
 .navbar {
   background: var(--mainWhite);
   height: 5rem;
-  display: flex;
-  align-items: center;
   border-bottom: 2px solid var(--primaryColor);
   box-shadow: var(--lightShadow);
-}
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: var(--smallWidth);
-  margin: 0 auto;
-  max-width: var(--fullWidth);
 }
 
 .nav-header {
@@ -209,15 +199,8 @@ Navbar
     display: flex;
   }
   .nav-links a {
-    text-transform: capitalize;
-    display: inline-block;
-    font-weight: bold;
-    margin-right: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 1.2rem;
-    padding: 0.25rem 0.5rem;
-    transition: var(--mainTransition);
+    padding: 0;
+    margin: 0 0.5rem;
   }
   .nav-links a:hover {
     padding: 0;
@@ -229,13 +212,6 @@ Navbar
   width: 12rem;
 }
 
-
-@media screen and (min-width: 576px) {
-  .nav-links a {
-    float: none;
-    width: 100%;
-  }
-}
 /* 
 ====== 
 About
